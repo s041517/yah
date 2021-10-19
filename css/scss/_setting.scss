@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+
+//尺寸
+$screenView  :1200px;  //主要內容寬度
+
+$hamburgerPoint :768px; //行動漢堡顯示寬度
+$topNavHeight: 150px; //上選單高度
+
+
+//顏色
+$cis-color-1: #438173;
+$cis-color-2: #1A2220;
+$cis-color-3: #fff;
+
+$body-bg:#000;
+
+// =====================================================================================
+// font
+// =====================================================================================
+
+//文字
+$fontFamilyStyle1: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.8;
+$googlefont :"Lato";
+$text-color:#fff;
+$link-color :#fff;
+$link-hover-color: $cis-color-1;
+
+
+$fontSizeBase    : $font-size-base;
+$font-size-large : floor(($fontSizeBase * 1.125));  
+$font-size-small : ceil(($fontSizeBase * 0.75));    
+$font-size-h1    : floor(($fontSizeBase * 2.25));   
+$font-size-h2    : floor(($fontSizeBase * 1.875));  
+$font-size-h3    : ceil(($fontSizeBase * 1.5));     
+$font-size-h4    : ceil(($fontSizeBase * 1.13));   
+$font-size-h5    : $fontSizeBase;					
+$font-size-h6    : ceil(($fontSizeBase * 0.85));    
+
+h1, .h1 { font-size: $font-size-h1;}
+h2, .h2 { font-size: $font-size-h2; }
+h3, .h3 { font-size: $font-size-h3; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+
+body{
+	font-size: $font-size-base;
+	font-family: $fontFamilyStyle1;
+	color: $text-color;
+	line-height: $line-height-base;
+	background-color: $body-bg;
+	overflow-x: hidden; 
+	overflow-y:auto;
+		-webkit-overflow-scrolling: touch;
+}
+
+
+img{
+	max-width: 100%;
+	vertical-align: middle;
+		backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+a{
+	color:$link-color;
+	text-decoration: none;
+	transition: all .5s ease-out;
+	
+	&:hover, 
+	&:focus {
+	    text-decoration: none;
+	    outline: 0;
+	}
+	&.underLine{text-decoration: underline;}
+}
+
+

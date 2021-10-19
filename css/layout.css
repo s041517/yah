@@ -1,0 +1,110 @@
+@charset "UTF-8";
+h1, .h1 {
+  font-size: 45px;
+}
+
+h2, .h2 {
+  font-size: 37px;
+}
+
+h3, .h3 {
+  font-size: 30px;
+}
+
+h4, .h4 {
+  font-size: 23px;
+}
+
+h5, .h5 {
+  font-size: 20px;
+}
+
+h6, .h6 {
+  font-size: 17px;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+  color: #fff;
+  line-height: 1.8;
+  background-color: #1A2220;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+a.underLine {
+  text-decoration: underline;
+}
+
+.noUlStyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scaleImg {
+  overflow: hidden;
+}
+
+.scaleImg img {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.scaleImg:hover img {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.itemImg {
+  width: 100%;
+  border-radius: 0;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  z-index: 1;
+}
+
+.itemImg.size100 {
+  padding-bottom: 100%;
+}
+
+.itemImg.size75 {
+  padding-bottom: 75%;
+}
+
+.itemImg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+/*# sourceMappingURL=layout.css.map */
